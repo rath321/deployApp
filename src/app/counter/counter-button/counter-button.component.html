@@ -1,0 +1,18 @@
+<button class="btn btn-primary" (click)="increment()">Add</button>
+<button class="btn btn-secondary" (click)="decrement()">Sub</button>
+<button class="btn btn-warning" (click)="reset()">Reset</button>
+
+<input [(ngModel)]="value" type="number" >
+
+
+<button class="btn btn-danger" (click)="customAdd()">Add this input</button>
+<br><br>
+<input [(ngModel)]="name" placeholder="name" type="text" >
+
+<input [(ngModel)]="email" placeholder="email" type="text" >
+<button class="btn btn-danger" (click)="dataAdd()">Add and display</button>
+
+<ul *ngFor="let n of num.filter(isOdd)">
+    <li>{{n}}</li>
+</ul>
+
